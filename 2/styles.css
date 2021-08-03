@@ -1,0 +1,215 @@
+html {
+	height: 100vh;
+}
+
+body {
+	height: 99vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Heebo', sans-serif;
+}	
+
+form {
+	margin: 1%;
+	padding: 3%;
+	height: 365px;
+    width: 340px;
+	box-shadow: 0px 2px 5px grey;
+	border-radius: 3px;
+}
+
+input[type=email], input[type=password], input[type=submit] {
+ 	width: 90%;
+ 	padding: 15px;
+  	margin: 8px 0 20px 0;
+  	display: inline-block;
+  	border: 1px solid #ededed;
+  	border-radius: 5px;
+}
+
+input[type=email]:focus, input[type=password]:focus {
+  	border: 2px solid #556bc4;
+  	border-radius: 5px;
+  	outline: none
+}
+
+input[type=submit] {
+	width: 100%;
+	color: white;
+	background-color: #556bc4;;
+	margin: 20px 0 0 0;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+h1 {
+	color: #556bc4;
+	font-weight: 750;
+	margin-bottom: 7px;
+}
+
+h3 {
+	font-weight: 500;
+	margin: 2%;
+	margin-left: 0;
+	font-size: 20px;
+}
+
+a, input  {
+	cursor: pointer
+}
+
+a, label {
+	font-weight: 550;
+	font-size: 14px;
+}
+
+a:link, a:visited, a:hover {
+  	text-decoration: none;
+  	color: #556bc4;
+}
+
+.footer	{
+	display: inline-block;
+	margin: 17px 50px 0px 50px;
+	
+}
+
+.renew {
+	position: relative;
+	right: -110px;
+}
+
+.signup {
+	margin-top: 15px;
+	font-size: 14px;
+}
+
+@media all and (min-width:2100px) {
+	form {
+		height: 610px;
+    	width: 600px;
+	}
+
+	a, label, .signup {
+		font-size: 30px;
+	}
+
+	input[type=email], input[type=password], input[type=submit] {
+		padding: 30px;
+		font-size: 26px;
+	}
+
+	h3 {
+		font-size: 35px;
+	}
+
+	h1 {
+		font-size: 65px;
+	}
+
+	.renew {
+		right: -117px;
+	}
+
+	.footer {
+		margin: 26px 44px 0px 44px;
+	}
+
+}
+
+@media all and (max-width:850px) and (orientation: portrait) {
+	a, label, .signup {
+		font-size: 20px;
+	}
+
+	input[type=email], input[type=password], input[type=submit] {
+		padding: 22px;
+		font-size: 17px;
+	}
+
+	h3 {
+		font-size: 29px;
+	}
+
+	h1 {
+		font-size: 45px;
+	}
+
+	form {
+		height: 460px;
+    	width: 460px;
+	}
+
+	.renew {
+		right: -134px;
+	}
+}
+
+@media all and (max-width:420px) and (orientation: portrait) {
+	form {
+		height: 370px;
+    	width: 370px;
+	}
+
+	a, label, .signup {
+		font-size: 15px;
+	}
+
+	input[type=email], input[type=password], input[type=submit] {
+		padding: 14px;
+		font-size: 14px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	.renew {
+		right: -120px;
+	}
+}
+
+@media all and (max-width:375px) and (orientation: portrait) {
+	form {
+		height: 365px;
+    	width: 315px;
+	}	
+
+	a, label, .signup {
+		font-size: 14px;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	.renew {
+		right: -87px;
+	}
+	
+	.footer {
+		margin: 16px 38px 0px 38px;
+	}
+}
+
+@media all and (max-width:320px) and (orientation: portrait) {
+	form {
+    	height: 350px;
+    	width: 280px;
+	}
+
+	a, label, .signup {
+		font-size: 12px;
+	}
+
+	.footer {
+    	margin: 8px 37px 0px 37px;
+	}
+}
