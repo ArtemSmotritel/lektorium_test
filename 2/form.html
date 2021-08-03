@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>registration</title>
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<h1>Stackfindover</h1>
+	<form name="signInForm">
+		<header><h3>Sign in to your account</h3></header>
+		<label for="email">Email</label><br>
+  		<input type="email" id="email_id" name="email_name" placeholder="Enter Email" required><br>
+  		<label for="password">Password</label>
+  		<label for="password" class="renew"><a href="https://www.google.com/" target="_blank">Forgot your password?</a></label>
+  		<br>
+  		<input type="password" id="password_id" name="password_name" placeholder="Enter Password" required><br>
+  		<input type="checkbox" id="signed_check" name="signed_check" value="true">
+  		<label for="signed_check">Stay signed for a week</label><br>
+  		<input type="submit" onclick="checkPassword(document.signInForm.password_name, document.signInForm.email_name)" value="Continue"><br>
+  		<p class="footer"><a href="https://www.google.com.ua/maps/" target="_blank">Use single sign-on (Google) instead</a></p>
+	</form>
+	<p class="signup">Don't have an account <a href="https://www.facebook.com/" target="_blank">Sign up</a></p>
+	<script src="validator.js"></script>
+</body>
+</html>
