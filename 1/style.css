@@ -1,0 +1,107 @@
+html {
+	height: 100vh;
+}
+
+body {
+	height: 99vh;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+	height: 511px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side {
+	display: flex;
+	height: 100px;
+	width: 105px;
+	border: 5px solid black;
+	border-radius: 20px;
+	justify-content: center;
+	padding: 1px;
+	flex-flow: row wrap;
+}
+.container {
+	width: 400px;
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	justify-content: space-between;
+}
+
+.dot {
+	height: 10px;
+	width: 10px;
+	border: 5px solid black;
+	border-radius: 10px;
+	background-color: black;
+	margin: 6px;
+	margin-left: 4px;
+    margin-right: 4px;
+}
+
+#s1 {
+	justify-content: center;
+    align-items: center;
+}
+
+#d6_2, #d6_5, #d6_8, #d2_2, #d2_3, #d2_4, #d2_5, #d2_6, #d2_7, #d2_8, #d5_2, #d5_4, #d5_6, #d5_8, #d3_2, #d3_3, #d3_4, #d3_6, #d3_7, #d3_8, #d4_2, #d4_4, #d4_5, #d4_6, #d4_8 {
+	visibility: hidden;
+}
+
+@media all and (max-width:950px) and (orientation: portrait) {
+	.container {
+		justify-content: space-around;
+	}  	
+	.container {
+
+	}
+}
+
+@media all and (max-width:375px) and (orientation: portrait) {
+	article {
+		height: 435px;
+	}
+	
+	.side {
+		height: 85px;
+    	width: 90px;
+	}
+
+	.dot {
+		margin: 5px;
+		height: 8px;
+    	width: 8px;
+	}
+
+	.container {
+		width: 360px;
+	}
+}
+
+@media all and (max-width:320px) and (orientation: portrait) {
+	article {
+    	height: 390px;
+	}
+
+	.container {
+   		width: 320px;
+	}
+
+	.dot {
+    	margin: 3px;
+    	height: 6px;
+    	width: 6px;
+	}
+
+	.side {
+    	height: 75px;
+    	width: 80px;
+	}
+}
